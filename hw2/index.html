@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+    
+    <title>Sofya Chernyaeva CV</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header container-header">
+           <nav class="nav">
+              <ul class="nav-list">
+                  <li class="nav-item"><a href="#Position" class="nav-link">Position</a></li>
+                  <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#About Myself" class="nav-link">About Myself</a></li>
+                  <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#Code example" class="nav-link">Code examples</a></li>
+                  <li class="nav-item"><a href="#Languages" class="nav-link">Languages</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+ <main class="main"> 
+    <div class="main-container">
+                    <div class="cv-photo">
+                        <img src="./img/foto.jpg" alt="foto.jpg">
+                    </div> 
+    </div>
+    <div class="section block-title">         
+            <section class="section-title" id="Position">
+                     <h1>Sofya Chernyaeva</h1>
+                     <h4>Trainer Python Developer</h4>
+            </section>
+    </div>
+
+    <div class="container">
+        <div class="cover">
+                    <section class="section-title" id="About Myself">
+                                <h2>About Myself:</h2> 
+                                <h4> Completed my postgraduate studies at St. Petersburg State University with a degree in Physics
+                                of Solar-Earth Relations. Engaged in scientific activities. Full cycle of satellite data preparation: search,
+                                download, cleaning, sorting and analysis. Has written several scientific articles in leading plasma physics journals. 
+                                Mother of two litlle children. I am currently pursuing a degree in System and Business Analyst.
+                                </h4>
+                    </section>
+        </div>
+    </div>
+            
+    <div class="container">
+        <div class="cover">
+            <section class="section-title" id="Skills">            
+                        <h3>Skills:</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Completed</th><th>Now</th><th>Future</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Exel pro </td><td>MySQL</td> <td>API</td>
+                                </tr>
+                                <tr>
+                                    <td>Grapher </td><td>Python</td> <td>NumpP,SciPy, Pandas, Matplotlib</td>
+                                </tr>
+                                <tr>
+                                    <td>Git, GitHub</td><td>JS</td> <td>UML, SOAP, REST API, XML, XHTML</td>
+                                </tr>
+                                <tr>
+                                    <td>Adobe Publisher</td><td>PowerBI</td> <td>HTTP,TLS, Websockets, Firebase, HTTP/2, gRPC</td>
+                                </tr>
+                                <tr>
+                                    <td>BPMN, IDEF</td><td>DAX</td> <td>Kafka, rabbit MQ, ESB (Enterprise Service Bus)</td>
+                                </tr>
+                                <tr>
+                                    <td>Waterfall, Scrum,etc</td><td>MongoDB, etc</td> <td>Basic auth, API key, OAuth, OAuth flows, JWT, JWS, SSO, OpenId, SAML, Social login</td>
+                                </tr>
+                             
+                            </tbody>
+                        </table>
+            </section>
+        </div>
+    </div>
+    
+    <div class="section-title" id="Code example">
+        <p class="code-text">Code example: (matlab)</p>
+            <pre class="code" >
+                    x=zeros(m,length(rx));
+                    y=zeros(m,length(ry));
+                        x(1,:)=0.75;
+                        y(1,:)=0.75;
+                        for n=1:(m-1)
+                            x(n+1,:)=rx.*x(n,:).*(1-x(n,:));
+                            y(n+1,:)=ry.*y(n,:).*(1-y(n,:));
+                        end
+                        for t=1:length(rx)
+                            p=corrcoef(x(:,t),y(:,t));
+                            k(t)=abs(p(2));    
+                        end
+                    subplot(2,1,1),plot(rx,k)
+                    subplot(2,1,2),plot(rx,x(end-200:end,:),'b.','markersize',2)
+            </pre>
+    </div> 
+    
+    <div class="section-title" id="Languages">
+        <h4>Languages</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>English</th><th>Deutsch</th><th>Russian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Advanced (c2)</td><td>Basic</td> <td>Native</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-title" id="Contacts">          
+        <h4>Contacts:</h4>
+        <ul>
+            <li>Phone: 8(951)688-53-13</li>
+            <li>Email: sonya.a.chernyaeva@ya.ru</li>
+            <li>Telegram: @sonya21che</li>
+            <li>discord: Sofya Chernyaeva (Aute0)</li>
+        </ul>
+    </div>
+
+</main>
+<footer class="footer">
+  <div><a href="https://github.com/Aute0"> | <img src="assets/svg/iconmonstr-github-1.svg" class="footer-image" alt="github"></a></div>
+  <div class="footer-text"> ©2022 Sofya Chernyaeva </div>
+</footer>
+</body>
+</html>
